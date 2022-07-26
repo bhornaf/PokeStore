@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { getTypes } from "../api/pokemon";
 import { useEffect, useState } from "react";
+import CartWidget from "./CartWidget";
 
 const NavBar = () => {
     const [types, setTypes] = useState([]);
@@ -41,6 +42,12 @@ const NavBar = () => {
                                 </Link>
                             </li>
                         ))}
+                        <li className="nav-item">
+                            <Link to="/cart" className="nav-link">
+                                Cart
+                                <CartWidget />
+                            </Link>
+                        </li>
                     </ul>
                 </div>
             </div>

@@ -16,10 +16,6 @@ const Main = () => {
                 />
                 <Route path="/cart" element={<Cart />} />
                 <Route path="/checkout" element={<Checkout />} />
-                {/* <Route path="/pokemon" element={<PokemonList />} />
-                <Route path="/items" element={<ItemList />} />
-                <Route path="/pokemon/:id" element={<Pokemon />} />
-                <Route path="/items/:id" element={<Item />} /> */}
             </Routes>
         </div>
     );
