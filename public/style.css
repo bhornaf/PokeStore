@@ -1,0 +1,89 @@
+.login {
+    width: 100%;
+    height: 100%;
+    background-color: #f2f2f2;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.login-form {
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -200px;
+    margin-left: -200px;
+}
+.login-form h1 {
+    font-size: 40px;
+    color: #fff;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.login-form .input-group {
+    margin-bottom: 20px;
+}
+.login-form .input-group input {
+    border: 1px solid #fff;
+    border-radius: 3px;
+    color: #fff;
+    padding: 10px;
+    width: 100%;
+    height: 40px;
+    background: none;
+}
+.login-form .btn {
+    width: 100%;
+    border: none;
+    border-radius: 3px;
+    padding: 10px;
+    background: #fff;
+    color: #000;
+    cursor: pointer;
+}
+.login-form .btn:hover {
+    background: #ffc107;
+    color: #000;
+}
+.login-form .btn:focus {
+    outline: none;
+}
+.login-form a {
+    color: #fff;
+    text-decoration: underline;
+}
+.login-form a:hover {
+    text-decoration: none;
+}
+.login-form form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.login-form form input {
+    margin-bottom: 10px;
+}
+
+.login__container__form__input {
+    width: 100%;
+    height: 40px;
+    border: 1px solid #fff;
+    border-radius: 3px;
+    color: #fff;
+    padding: 10px;
+    background: none;
+}
+
+.login__container__form__button {
+    width: 100%;
+    border: none;
+    border-radius: 3px;
+    padding: 10px;
+    background: #fff;
+    color: #000;
+    cursor: pointer;
+}
