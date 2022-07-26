@@ -6,12 +6,11 @@ import { Link } from "react-router-dom";
 const ItemDetail = ({ item }) => {
     const pokemon = item;
     const [count, setCount] = useState([]);
+    const [normal, setNormal] = useState("normal");
     const result = useContext(context);
-    const [normal, setNormal] = useState(1);
 
     const handleOnChange = (e) => {
         setNormal(e.target.value);
-        console.log(normal);
     };
 
     const onAdd = (count) => {
@@ -26,7 +25,7 @@ const ItemDetail = ({ item }) => {
                 <img
                     className="card-img-top img-fluid"
                     src={
-                        normal
+                        normal === "normal"
                             ? pokemon.sprites.front_default
                             : pokemon.sprites.front_shiny
                     }
@@ -84,38 +83,27 @@ const ItemDetail = ({ item }) => {
                         <div className="card-text">
                             <strong className="me-3"> Shiny:</strong>
 
-                            <div className="form-check">
+                            <div className="">
                                 <input
                                     className="form-check-input"
                                     type="radio"
                                     id="normal"
-                                    value={1}
-                                    checked={normal === 1 ? true : false}
+                                    value={"normal"}
+                                    checked={normal === "normal" ? true : false}
                                     onChange={handleOnChange}
                                 />
-
-                                <label
-                                    className="form-check-label"
-                                    htmlFor="normal"
-                                >
-                                    Normal
-                                </label>
-                            </div>
-                            <div className="form-check">
+                                Normal
+                                {/* </div>
+                            <div className="form-check"> */}
                                 <input
                                     className="form-check-input"
                                     type="radio"
                                     id="shiny"
-                                    value={2}
-                                    checked={normal === 2 ? true : false}
+                                    value={"shiny"}
+                                    checked={normal === "shiny" ? true : false}
                                     onChange={handleOnChange}
                                 />
-                                <label
-                                    className="form-check-label"
-                                    htmlFor="shiny"
-                                >
-                                    Shiny
-                                </label>
+                                Shiny
                             </div>
                         </div>
                     </div>

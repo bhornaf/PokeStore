@@ -26,15 +26,6 @@ const Cart = (props) => {
                                 <td>{item.quantity}</td>
                                 <td>{item.id * item.quantity}</td>
                                 <td>
-                                    {/* div button grupo
-                                    <div className="btn-group">
-                                        <Link to={`/pokemon/${item.name}`}>
-                                            <button className="btn btn-warning">
-                                                <i className="bi bi-eye-fill"></i>
-                                            </button>
-                                        </Link>
-                                    </div> */}
-
                                     <button
                                         className="btn btn-danger"
                                         onClick={() => removeItem(item.id)}
@@ -42,7 +33,6 @@ const Cart = (props) => {
                                         Remove
                                     </button>
                                     <button className="btn btn-info">
-                                        {/* link to pokemon info */}
                                         <Link to={`/pokemon/${item.name}`}>
                                             View
                                         </Link>
